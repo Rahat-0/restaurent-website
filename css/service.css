@@ -1,0 +1,109 @@
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    background: url(../image/homepage\ background_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.context-1{
+    margin-top: 45vh;
+    margin-left: 10%;
+    text-align:left;
+   
+    
+    
+}
+.box{
+
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 260px;
+    left: 30px;
+    border: rgb(128, 189, 240) solid;
+    border-width: 15px 0 15px 15px;
+    background: transparent;
+    
+}
+main-contact{
+    position: absolute;
+    top: 120vh;
+    height: 130vh;
+    width: 100%;
+    background: url(../image/background-home.jpg);
+    background-size: cover;
+}
+
+
+footer{
+    position: absolute;
+    top: 250vh ;
+}
+@media screen and (max-width: 950px){
+
+    .checkbtn{
+       display: block;
+    }
+    
+    .navlist{
+        top:-20px;
+        flex-direction: column;
+        line-height: 70px;
+        position: fixed;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        padding-top: -290px;
+        background: blue;
+        transition: all, 0.5s;
+
+    }
+
+    #check:checked ~ .navlist, .nav{
+        left: 0;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+    }
+    header.sticky{
+        padding: 0;
+        margin: 0;
+    }
+    .sr{
+        display: none;
+    }
+
+    #logo{
+        width: 80px;
+        height: 40px;
+        margin-top: 30px;
+    }
+    /* .banner{
+        max-height: 150vh;
+    } */
+    .main-btn{
+        height: 40px;
+        width: 150px;
+    }
+    .main-btn a{
+        font-size: 15px;
+    }
+    .part1{
+        display: inline-block;
+    }
+    .part1 .image1{
+        min-width: 100%;
+    }
+    .part1 .contant1{
+        min-width: 100%; 
+        text-align: center;
+    }
+
+    .part1-dtls{
+        width: 100%;
+        padding:0 50px;
+    }
+
+}
